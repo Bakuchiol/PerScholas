@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #dba560;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#card {
+  width: 350px;
+  height: 450px;
+  position: fixed;
+}
+#outside, #inside {
+  border-radius: 0 15px 15px 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#outside {
+    z-index: 1;
+    position: absolute;
+    background-color: #646bae;
+    transition: 1s;
+    transform-origin: 0;
+}
+.open-card {
+  transform: rotateY(90deg);
+}
+#outside-title {
+  color: #f5d157;
+  font-family: Courier;
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+}
+#inside-title {
+  color: #101235;
+  font-family: Courier;
+  font-size: 12pt;
+  text-align: center;
+   margin-top: 30px;
+}
+#outside-pic {
+  width: 250px;
+  height: auto;
+  margin: 15px;
+}
+#outside-help {
+  color: black;
+  font-family: Courier;
+  font-size: 12pt;
+  text-align: center;
+  padding: 20px;
+}
+#inside {
+  z-index: 0;
+  position: absolute;
+  background-color: #ffffff;
+}
+#inside-pic {
+  width: 250px;
+  height: auto;
+}
+#message {
+  padding: 5px;
+  color: black;
+  font-family: Courier;
+  font-size: 12pt;
+  text-align: center;
+}
+button {
+  background: #adacd2;
+  margin: 15px 0 15px;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 20px;
+  color: #15153b;
+  transition: all .3s ease;
+}
+button:hover {
+  color: #d44c5a;
+  font-weight: bold;
+}
